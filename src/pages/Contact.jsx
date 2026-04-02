@@ -21,7 +21,7 @@ export function Contact() {
       {/* Main Content */}
       <section className="section-padding bg-white">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-14">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-14">
             {/* Form */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -63,7 +63,7 @@ export function Contact() {
               {/* Social Links */}
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100">
                 <p className="font-semibold text-slate-800 text-sm mb-4">Follow Us</p>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3">
                   {[
                     { icon: <FaWhatsapp className="w-5 h-5" />, label: 'WhatsApp', href: `https://wa.me/${CLINIC.whatsapp}`, color: 'hover:bg-green-500' },
                     { icon: <FaInstagram className="w-5 h-5" />, label: 'Instagram', href: '#', color: 'hover:bg-pink-500' },
@@ -79,7 +79,7 @@ export function Contact() {
               </div>
 
               {/* Map */}
-              <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-card h-64">
+              <div className="w-full overflow-hidden rounded-xl border border-slate-100 shadow-card h-[300px]">
                 <iframe
                   src="https://maps.google.com/maps?q=Mangalabag+Cuttack+Odisha&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full"

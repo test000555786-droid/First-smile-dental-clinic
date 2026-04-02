@@ -48,7 +48,7 @@ Message: ${data.message || 'N/A'}`
   }
 
   return (
-    <div className="glass-card rounded-3xl p-8">
+    <div className="glass-card rounded-3xl p-5 sm:p-8 w-full max-w-full box-border overflow-hidden">
       <h3 className="font-display text-xl font-bold text-slate-800 mb-6">Book an Appointment</h3>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <div className="grid sm:grid-cols-2 gap-4">
@@ -87,12 +87,12 @@ Message: ${data.message || 'N/A'}`
           {...register('date', { required: 'Please select a date' })}
         />
 
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1.5 w-full">
           <label className="text-sm font-semibold text-slate-700">Message (Optional)</label>
           <textarea
             rows={3}
             placeholder="Describe your dental concern..."
-            className="px-4 py-3 rounded-xl border border-slate-200 text-slate-800 bg-white/80 text-sm placeholder:text-slate-400 transition-all duration-200 outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100 resize-none"
+            className="w-full box-border px-4 py-3 rounded-xl border border-slate-200 text-slate-800 bg-white/80 text-sm placeholder:text-slate-400 transition-all duration-200 outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100 resize-none"
             {...register('message')}
           />
         </div>

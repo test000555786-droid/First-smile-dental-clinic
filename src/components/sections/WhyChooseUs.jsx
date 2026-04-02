@@ -11,7 +11,7 @@ const reasons = [
     desc: 'Advanced local anesthesia and sedation options ensure your comfort. Most patients feel nothing at all.', 
   },
   { 
-    image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop',
     title: 'Latest Technology', 
     shortDesc: 'State-of-the-art equipment for precision.',
     desc: 'Digital X-rays, laser dentistry, rotary instruments — state-of-the-art equipment for precise results.', 
@@ -23,7 +23,7 @@ const reasons = [
     desc: 'Hospital-grade autoclave sterilization. All instruments disinfected, single-use items where possible.', 
   },
   { 
-    image: 'https://images.unsplash.com/photo-1726137569772-791c3b20b4cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop',
     title: 'Transparent Pricing', 
     shortDesc: 'Clear costs, no hidden surprises.',
     desc: 'No hidden costs. Clear treatment plans with flexible EMI options for all budgets.', 
