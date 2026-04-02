@@ -86,42 +86,46 @@ export function Navbar() {
             })}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* Actions */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Call Button (Icon Only) */}
             <a
               href={`tel:${CLINIC.phoneRaw}`}
-              className={`flex items-center gap-2 text-sm font-semibold transition-colors duration-300 px-3 py-2 rounded-lg 
-                ${isLightText 
-                  ? 'text-white hover:bg-white/10' 
-                  : 'text-slate-700 hover:text-primary-600 hover:bg-primary-50'}
+              title="Call Now"
+              className={`flex items-center justify-center w-10 h-10 lg:w-11 lg:h-11 rounded-full transition-all duration-300 hover:scale-105 shadow-sm 
+                ${isLightText
+                  ? 'bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:shadow-lg hover:shadow-white/10'
+                  : 'bg-white/60 backdrop-blur-md border border-slate-200 text-primary-600 hover:bg-white hover:shadow-lg'
+                }
               `}
             >
-              <Phone className="w-4 h-4" />
-              {CLINIC.phone}
+              <Phone className="w-4 h-4 lg:w-5 lg:h-5" />
             </a>
+
+            {/* Desktop Book Appointment */}
             <a
               href={`https://wa.me/${CLINIC.whatsapp}?text=Hi%2C%20I%20want%20to%20book%20a%20dental%20appointment`}
               target="_blank"
               rel="noopener noreferrer"
-              className={`btn-primary text-sm px-5 py-2.5 transition-all duration-300 ${
+              className={`hidden lg:flex btn-primary text-sm px-5 py-2.5 transition-all duration-300 ${
                 isLightText ? 'shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.25)] border border-white/20' : ''
               }`}
             >
               Book Appointment
             </a>
-          </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className={`lg:hidden w-10 h-10 rounded-xl border flex items-center justify-center transition-colors duration-300 ${
-              isLightText
-                ? 'bg-white/10 border-white/20 text-white hover:bg-white/20'
-                : 'bg-primary-50 border-primary-100 text-primary-600 hover:bg-primary-100'
-            }`}
-            onClick={() => setMobileOpen(v => !v)}
-          >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+            {/* Mobile Menu Toggle */}
+            <button
+              className={`lg:hidden w-10 h-10 rounded-xl border flex items-center justify-center transition-colors duration-300 ${
+                isLightText
+                  ? 'bg-white/10 border-white/20 text-white hover:bg-white/20'
+                  : 'bg-primary-50 border-primary-100 text-primary-600 hover:bg-primary-100'
+              }`}
+              onClick={() => setMobileOpen(v => !v)}
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </motion.header>
 
