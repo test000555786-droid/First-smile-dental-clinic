@@ -1,0 +1,25 @@
+export const doctor = {
+  name: 'Dr. Abhas Dash',
+  title: 'Chief Dental Surgeon & Implantologist',
+  degree: 'BDS, Gold Medalist',
+  college: 'SCB Medical College, Cuttack',
+  residency: 'Acharya Harihar Post Graduate Institute of Cancer, Cuttack',
+  experience: '10+',
+  patientsServed: '5000+',
+  successRate: '99%',
+  bio: 'Dr. Abhas Dash is a distinguished dental surgeon who graduated with Gold Medal honors from SCB Medical College, Cuttack – one of Odisha\'s most prestigious medical institutions. His post-graduate training as Junior Resident at Acharya Harihar Post Graduate Institute of Cancer has equipped him with advanced skills in oral oncology and complex dental procedures.',
+  bio2: 'With over a decade of clinical experience, Dr. Dash is known for his gentle approach, meticulous precision, and commitment to pain-free dentistry. He believes every patient deserves a confident, healthy smile regardless of their dental anxiety or budget.',
+  specializations: [
+    'Dental Implantology',
+    'Cosmetic Dentistry',
+    'Root Canal Specialist',
+    'Oral Surgery',
+    'Orthodontics',
+  ],
+  achievements: [
+    { icon: '🏅', title: 'Gold Medalist', desc: 'SCB Medical College' },
+    { icon: '🎓', title: 'BDS Qualified', desc: 'Odisha Certified' },
+    { icon: '🏥', title: 'PG Trained', desc: 'Cancer Institute' },
+    { icon: '⭐', title: '5.0 Rating', desc: '52 Google Reviews' },
+  ],
+}

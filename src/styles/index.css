@@ -1,0 +1,225 @@
+@import './variables.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background: #ffffff;
+    color: #1e293b;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(14, 165, 233, 0.2);
+    color: #0284c7;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f0f9ff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0ea5e9, #14b8a6);
+    border-radius: 10px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-card-blue {
+    background: rgba(240, 249, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    box-shadow: 0 4px 24px rgba(14, 165, 233, 0.08);
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    box-shadow: var(--shadow-button);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(14, 165, 233, 0.5);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  .btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold transition-all duration-300;
+    border: 2px solid #0ea5e9;
+    color: #0ea5e9;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    background: #0ea5e9;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-button);
+  }
+  
+  .section-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-4;
+    background: rgba(14, 165, 233, 0.1);
+    color: #0284c7;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #0ea5e9 0%, #14b8a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gradient-text-gold {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5), 0 0 0 0 rgba(37, 211, 102, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: whatsapp-pulse 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  .floating-whatsapp:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes whatsapp-pulse {
+    0% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5), 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    70% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5), 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5), 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+  
+  .hero-bg-pattern {
+    background-color: #f0f9ff;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+  }
+  
+  .card-service {
+    @apply rounded-3xl p-7 transition-all duration-500 cursor-pointer;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    box-shadow: 0 4px 24px rgba(14, 165, 233, 0.06);
+  }
+  .card-service:hover {
+    transform: translateY(-8px);
+    border-color: rgba(14, 165, 233, 0.25);
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.15);
+  }
+  
+  .nav-link {
+    @apply relative text-slate-600 font-medium transition-colors duration-300;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0ea5e9, #14b8a6);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #0ea5e9;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .faq-item {
+    @apply rounded-2xl overflow-hidden transition-all duration-300;
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .price-card {
+    @apply rounded-3xl p-8 transition-all duration-300;
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 24px rgba(14, 165, 233, 0.06);
+  }
+  .price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(14, 165, 233, 0.14);
+  }
+  .price-card-featured {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #14b8a6 100%);
+    border-color: transparent;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(14, 165, 233, 0.4);
+  }
+
+  .counter-value {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .border-glass {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  .border-primary-light {
+    border: 1px solid rgba(14, 165, 233, 0.2);
+  }
+}
