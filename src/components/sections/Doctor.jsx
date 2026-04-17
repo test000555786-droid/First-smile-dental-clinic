@@ -29,7 +29,7 @@ export function Doctor() {
             {/* Doctor Card */}
             <div className="relative rounded-[2.5rem] overflow-hidden border border-primary-100 shadow-glass-lg aspect-[3/4] flex items-center justify-center">
               <img 
-                src="/images/doctor.png" 
+                src="/images/doctor.webp" 
                 alt="Dr. Abhas Dash" 
                 className="w-full h-full object-cover"
               />

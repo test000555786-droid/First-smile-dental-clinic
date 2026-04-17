@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { Plus, Minus, Download, FileText, Info } from 'lucide-react'
 import { PageBanner } from '../components/ui/PageBanner'
+import { PageSEO } from '../components/seo/PageSEO'
 
 const faqs = [
   {
@@ -23,9 +24,27 @@ const faqs = [
 ]
 
 const resources = [
-  { title: 'Post-Extraction Care Guide', icon: FileText, size: '240 KB' },
-  { title: 'Braces Maintenance Tips', icon: Info, size: '150 KB' },
-  { title: 'Dental Implant FAQ Brochure', icon: Download, size: '512 KB' },
+  {
+    title: 'Post-Extraction Care Guide',
+    icon: FileText,
+    size: '240 KB',
+    href: '/resources/Post_Extraction_Care_Guide_First_Smile.pdf',
+    fileName: 'Post-Extraction-Care-Guide-First-Smile-Dental.pdf',
+  },
+  {
+    title: 'Braces Maintenance Tips',
+    icon: Info,
+    size: '150 KB',
+    href: '/resources/Braces_Maintenance_Tips_First_Smile.pdf',
+    fileName: 'Braces-Maintenance-Tips-First-Smile-Dental.pdf',
+  },
+  {
+    title: 'Dental Implant FAQ Brochure',
+    icon: Download,
+    size: '512 KB',
+    href: '/resources/Dental_Implant_FAQ_First_Smile.pdf',
+    fileName: 'Dental-Implant-FAQ-First-Smile-Dental.pdf',
+  },
 ]
 
 export function PatientCorner() {
@@ -33,6 +52,7 @@ export function PatientCorner() {
 
   return (
     <div className="pb-20">
+      <PageSEO />
       <PageBanner 
         badge="🤝 For You"
         title="Patient"
@@ -99,7 +119,16 @@ export function PatientCorner() {
               
               <div className="space-y-4">
                 {resources.map((res, idx) => (
-                  <div key={idx} className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-primary-200 transition-colors group">
+                  <a
+                    key={idx}
+                    href={res.href}
+                    download={res.fileName}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`Download ${res.title} – First Smile Dental Clinic`}
+                    aria-label={`Download ${res.title} PDF`}
+                    className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-primary-200 transition-colors group"
+                  >
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
                         <res.icon className="w-5 h-5" />
@@ -109,10 +138,10 @@ export function PatientCorner() {
                         <p className="text-xs text-slate-500">PDF Document • {res.size}</p>
                       </div>
                     </div>
-                    <button className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 group-hover:text-primary-600 group-hover:border-primary-300 transition-colors shadow-sm">
+                    <span className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 group-hover:text-primary-600 group-hover:border-primary-300 transition-colors shadow-sm">
                       <Download className="w-4 h-4" />
-                    </button>
-                  </div>
+                    </span>
+                  </a>
                 ))}
               </div>
             </div>

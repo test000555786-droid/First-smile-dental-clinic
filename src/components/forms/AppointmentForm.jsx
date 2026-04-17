@@ -61,7 +61,7 @@ Message: ${data.message || 'N/A'}`
           <InputField
             label="Phone Number *"
             type="tel"
-            placeholder="+91 98765 43210"
+            placeholder="+91 9000000000"
             error={errors.phone?.message}
             {...register('phone', {
               required: 'Phone is required',

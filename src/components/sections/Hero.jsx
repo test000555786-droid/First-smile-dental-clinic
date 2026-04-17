@@ -130,7 +130,7 @@ export function Hero() {
               {/* Main Card */}
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-glass-lg border border-white/80 aspect-[4/5] flex items-center justify-center">
                 <img 
-                  src="/images/hero.png" 
+                  src="/images/hero.webp" 
                   alt="Happy Dental Patient" 
                   className="w-full h-full object-cover"
                 />

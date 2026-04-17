@@ -8,10 +8,12 @@ import { services, serviceColors } from '../data/services'
 import { CLINIC } from '../lib/utils'
 import { Appointment } from '../components/sections/Appointment'
 import { FAQ } from '../components/sections/FAQ'
+import { PageSEO } from '../components/seo/PageSEO'
 
 export function ServicesPage() {
   return (
     <>
+      <PageSEO />
       <PageBanner 
         badge="🦷 Complete Dental Care"
         title="Our"
@@ -41,7 +43,8 @@ export function ServicesPage() {
                     <div className="relative rounded-3xl overflow-hidden border border-slate-100 shadow-card aspect-video flex items-center justify-center group">
                       <img 
                         src={service.image} 
-                        alt={service.title} 
+                        alt={`${service.title} treatment in Cuttack at First Smile Dental Clinic`}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>

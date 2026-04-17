@@ -8,16 +8,18 @@ import { Testimonials } from '../components/sections/Testimonials'
 import { TrustBar } from '../components/sections/TrustBar'
 import { CLINIC } from '../lib/utils'
 import { doctor } from '../data/doctor'
+import { PageSEO } from '../components/seo/PageSEO'
 
 export function About() {
   return (
     <>
+      <PageSEO />
       <PageBanner 
         badge="🏥 About Us"
         title="About"
         highlight="First Smile"
         subtitle="Cuttack's most trusted dental clinic, combining Gold Medal expertise with genuine compassionate care. We believe every smile deserves to shine."
-        bgImage="/images/bg_about.png"
+        bgImage="/images/bg_about.webp"
       />
 
       <TrustBar />

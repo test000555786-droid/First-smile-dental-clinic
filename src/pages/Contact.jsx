@@ -6,10 +6,12 @@ import { PageBanner } from '../components/ui/PageBanner'
 import { AppointmentForm } from '../components/forms/AppointmentForm'
 import { FAQ } from '../components/sections/FAQ'
 import { CLINIC } from '../lib/utils'
+import { PageSEO } from '../components/seo/PageSEO'
 
 export function Contact() {
   return (
     <>
+      <PageSEO />
       <PageBanner 
         badge="📅 Book Appointment"
         title="Contact"
@@ -81,7 +83,7 @@ export function Contact() {
               {/* Map */}
               <div className="w-full overflow-hidden rounded-xl border border-slate-100 shadow-card h-[300px]">
                 <iframe
-                  src="https://maps.google.com/maps?q=Mangalabag+Cuttack+Odisha&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=First+Smile+Dental+Clinic+Mangalabag+Kathagola+Cuttack+Odisha+753001+India&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full"
                   loading="lazy"
                   title="Clinic Location Map"

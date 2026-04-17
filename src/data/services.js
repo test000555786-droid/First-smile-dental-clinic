@@ -9,7 +9,7 @@ export const services = [
     priceRange: '₹3,000 – ₹6,000',
     color: 'blue',
     slug: 'root-canal',
-    image: '/images/root_canal.png',
+    image: '/images/root_canal.webp',
   },
   {
     id: 'implants',
@@ -21,7 +21,7 @@ export const services = [
     priceRange: '₹25,000 – ₹50,000',
     color: 'teal',
     slug: 'dental-implants',
-    image: '/images/implants.png',
+    image: '/images/implants.webp',
   },
   {
     id: 'whitening',
@@ -33,7 +33,7 @@ export const services = [
     priceRange: '₹5,000 – ₹12,000',
     color: 'accent',
     slug: 'teeth-whitening',
-    image: '/images/whitening.png',
+    image: '/images/whitening.webp',
   },
   {
     id: 'braces',
@@ -45,7 +45,7 @@ export const services = [
     priceRange: '₹18,000 – ₹80,000',
     color: 'blue',
     slug: 'braces-aligners',
-    image: '/images/braces.png',
+    image: '/images/braces.webp',
   },
   {
     id: 'kids',
@@ -57,7 +57,7 @@ export const services = [
     priceRange: '₹500 – ₹3,000',
     color: 'teal',
     slug: 'kids-dentistry',
-    image: '/images/kids.png',
+    image: '/images/kids.webp',
   },
   {
     id: 'emergency',
@@ -69,7 +69,7 @@ export const services = [
     priceRange: 'Contact for pricing',
     color: 'accent',
     slug: 'emergency-care',
-    image: '/images/service.png',
+    image: '/images/service.webp',
   },
 ]
 

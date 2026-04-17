@@ -12,9 +12,9 @@ export function formatPhone(phone) {
 export const CLINIC = {
   name: 'First Smile Dental Clinic & Implant Center',
   shortName: 'First Smile Dental',
-  phone: '+91 63715 51483',
-  phoneRaw: '+916371551483',
-  whatsapp: '916371551483',
+  phone: '+91 9078779904',
+  phoneRaw: '+919078779904',
+  whatsapp: '919078779904',
   address: 'Near Shreema Hospital, Mangalabag, Kathagola, Cuttack, Odisha – 753001',
   city: 'Cuttack, Odisha',
   rating: '5.0',

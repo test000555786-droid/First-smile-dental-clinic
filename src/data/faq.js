@@ -22,7 +22,7 @@ export const faqs = [
   {
     id: 5,
     question: 'How do I book an emergency appointment?',
-    answer: 'Call us at +91 63715 51483 or WhatsApp for immediate assistance. We reserve slots for dental emergencies and aim to see emergency patients within 2 hours of their call during working hours.',
+    answer: 'Call us at +91 9078779904 or WhatsApp for immediate assistance. We reserve slots for dental emergencies and aim to see emergency patients within 2 hours of their call during working hours.',
   },
   {
     id: 6,

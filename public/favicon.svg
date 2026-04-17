@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <!-- primary-500 #0ea5e9 → teal-500 #14b8a6 — matches navbar logo gradient -->
+      <stop offset="0%"   stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background (rx=14 gives ~rounded-xl feel at 64px) -->
+  <rect width="64" height="64" rx="14" ry="14" fill="url(#bg)"/>
+
+  <!-- Tooth icon — white, centred, scaled to ~40×40 inside the 64×64 box -->
+  <!-- Translated so the tooth visual centre sits at (32,32) -->
+  <g transform="translate(12, 10) scale(1.25)">
+    <!--
+      Tooth shape: classic two-root molar silhouette.
+      Derived from a clean 32×36 path so it scales cleanly.
+    -->
+    <path
+      fill="white"
+      d="
+        M20 0
+        C 24.5 0, 32 3.5, 32 11
+        C 32 16.5, 29 19, 26 20
+        C 25 24, 24 32, 22 36
+        C 21 38.5, 19 38.5, 18 36
+        C 17 33, 16 28, 16 28
+        C 16 28, 15 33, 14 36
+        C 13 38.5, 11 38.5, 10 36
+        C 8 32, 7 24, 6 20
+        C 3 19, 0 16.5, 0 11
+        C 0 3.5, 7.5 0, 12 0
+        C 14 0, 16 1, 16 1
+        C 16 1, 18 0, 20 0
+        Z
+      "
+    />
+  </g>
+</svg>

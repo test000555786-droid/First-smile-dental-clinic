@@ -9,10 +9,12 @@ import { Pricing } from '../components/sections/Pricing'
 import { ClinicTour } from '../components/sections/ClinicTour'
 import { Appointment } from '../components/sections/Appointment'
 import { FAQ } from '../components/sections/FAQ'
+import { PageSEO } from '../components/seo/PageSEO'
 
 export function Home() {
   return (
     <>
+      <PageSEO />
       <Hero />
       <TrustBar />
       <Services />
@@ -27,3 +29,4 @@ export function Home() {
     </>
   )
 }
+

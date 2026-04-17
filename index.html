@@ -3,35 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#0ea5e9" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
-    <!-- SEO Meta Tags -->
-    <title>First Smile Dental Clinic & Implant Center | Best Dentist in Cuttack</title>
-    <meta name="description" content="First Smile Dental Clinic & Implant Center – Best dental clinic in Cuttack. Expert dental care by Dr. Abhas Dash (BDS, Gold Medalist). Book appointment today!" />
-    <meta name="keywords" content="best dentist in Cuttack, dental clinic Mangalabag, dental implants Cuttack, root canal Cuttack, teeth whitening Cuttack, First Smile Dental" />
-    <meta name="author" content="First Smile Dental Clinic" />
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="First Smile Dental Clinic & Implant Center" />
-    <meta property="og:description" content="Pain-Free Dental Treatment in Cuttack. Trusted by 1000+ patients." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_IN" />
-    
-    <!-- Google Fonts -->
+
+    <!-- ── Default SEO (overridden per-page by react-helmet-async) ── -->
+    <title>Best Dental Clinic in Cuttack & Bhubaneswar | First Smile Dental Clinic & Implant Center</title>
+    <meta name="description" content="First Smile Dental Clinic & Implant Center – Best dental clinic in Cuttack. Expert dental care by Dr. Abhas Dash (BDS, Gold Medalist). Root canal, implants, braces & more. Book today!" />
+    <meta name="keywords" content="best dentist in Cuttack, dental clinic Cuttack, dentist Bhubaneswar, dental implants Cuttack, root canal Cuttack, teeth whitening Cuttack, braces Cuttack, First Smile Dental, dentist Odisha" />
+    <meta name="author" content="First Smile Dental Clinic & Implant Center" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ── Open Graph ── -->
+    <meta property="og:site_name"   content="First Smile Dental Clinic & Implant Center" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://firstsmiledentalsclinic.com/" />
+    <meta property="og:title"       content="Best Dental Clinic in Cuttack | First Smile Dental Clinic" />
+    <meta property="og:description" content="Pain-Free Dental Treatment in Cuttack. Trusted by 1000+ patients. Book an appointment today!" />
+    <meta property="og:locale"      content="en_IN" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Best Dental Clinic in Cuttack | First Smile Dental Clinic" />
+    <meta name="twitter:description" content="Pain-Free Dental Treatment in Cuttack. Root canal, implants, braces & more. Trusted by 1000+ patients." />
+
+    <!-- ── Geo Tags (Local SEO) ── -->
+    <meta name="geo.region"    content="IN-OR" />
+    <meta name="geo.placename" content="Cuttack, Odisha, India" />
+    <meta name="geo.position"  content="20.4625;85.8830" />
+    <meta name="ICBM"          content="20.4625, 85.8830" />
+
+    <!-- ── Sitemap hint ── -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- ── Google Fonts ── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    
-    <!-- Swiper CSS -->
+
+    <!-- ── Swiper CSS ── -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <!-- Structured Data -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         STRUCTURED DATA — Multiple schemas for rich results
+    ════════════════════════════════════════════════════════════════ -->
+
+    <!-- Schema 1: Dentist / LocalBusiness (most important for local SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Dentist",
+      "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
+      "@id": "https://firstsmiledentalsclinic.com/#clinic",
       "name": "First Smile Dental Clinic & Implant Center",
-      "image": "",
+      "alternateName": "First Smile Dental",
+      "description": "Best dental clinic in Cuttack, Odisha. Expert dental care by Dr. Abhas Dash (BDS, Gold Medalist from SCB Medical College). Root canal, dental implants, braces, teeth whitening and more.",
+      "url": "https://firstsmiledentalsclinic.com",
+      "logo": "https://firstsmiledentalsclinic.com/favicon.svg",
+      "image": "https://firstsmiledentalsclinic.com/og-image.webp",
+      "telephone": "+919078779904",
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, UPI, EMI",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Near Shreema Hospital, Mangalabag, Kathagola",
@@ -40,15 +73,144 @@
         "postalCode": "753001",
         "addressCountry": "IN"
       },
-      "telephone": "+916371551483",
-      "openingHours": "Mo-Su 09:00-21:01",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "20.4625",
+        "longitude": "85.8830"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Cuttack" },
+        { "@type": "City", "name": "Bhubaneswar" },
+        { "@type": "State", "name": "Odisha" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "09:00",
+          "closes": "21:01"
+        }
+      ],
+      "sameAs": [
+        "https://wa.me/919078779904"
+      ],
+      "hasMap": "https://maps.google.com/maps?q=First+Smile+Dental+Clinic+Mangalabag+Kathagola+Cuttack+Odisha+753001+India",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "52"
+        "reviewCount": "52",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "medicalSpecialty": "Dentistry",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Root Canal Treatment" },
+        { "@type": "MedicalProcedure", "name": "Dental Implants" },
+        { "@type": "MedicalProcedure", "name": "Teeth Whitening" },
+        { "@type": "MedicalProcedure", "name": "Braces & Aligners" },
+        { "@type": "MedicalProcedure", "name": "Kids Dentistry" },
+        { "@type": "MedicalProcedure", "name": "Emergency Dental Care" }
+      ],
+      "employee": {
+        "@type": "Physician",
+        "name": "Dr. Abhas Dash",
+        "jobTitle": "Chief Dental Surgeon",
+        "description": "BDS, Gold Medalist from SCB Medical College, Cuttack. 10+ years experience in advanced dentistry.",
+        "medicalSpecialty": "Dentistry"
       }
     }
     </script>
+
+    <!-- Schema 2: FAQ (triggers FAQ rich results in Google SERP) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is root canal treatment painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern root canal treatment at First Smile Dental Clinic in Cuttack is virtually painless. We use advanced local anesthesia techniques and rotary instruments to ensure minimal to no discomfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a dental implant procedure take in Cuttack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The implant placement takes about 30–60 minutes. The full process – from implant to final crown – typically takes 3–6 months. We offer same-day temporary solutions at First Smile Dental Clinic, Cuttack."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of dental implants in Cuttack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dental implant cost at First Smile Dental Clinic ranges from ₹25,000 to ₹50,000 per implant. EMI options are available with 0% interest for treatments above ₹10,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer EMI or installment payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! First Smile Dental Clinic in Cuttack offers flexible EMI options with 0% interest for treatments above ₹10,000. We accept credit cards, debit cards, UPI, and have tie-ups with leading finance companies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to book a dentist appointment in Cuttack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book a dental appointment at First Smile Dental Clinic by calling +91 9078779904 or WhatsApp. We confirm appointments within 30 minutes. Walk-ins are also welcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum age for braces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Traditional braces at First Smile Dental Clinic can start as early as 10–12 years. For clear aligners, we recommend 16+ years. Early consultation helps plan the ideal timing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your clinic timings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First Smile Dental Clinic in Cuttack is open daily from 9:00 AM to 9:01 PM including Sundays. Emergency dental care is available. Call +91 9078779904 for same-day appointments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I visit the dentist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend a routine dental check-up and cleaning every 6 months. Regular visits help detect problems early, preventing costly treatments later."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema 3: BreadcrumbList (improves SERP display) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",           "item": "https://firstsmiledentalsclinic.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services",       "item": "https://firstsmiledentalsclinic.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "About Us",       "item": "https://firstsmiledentalsclinic.com/about" },
+        { "@type": "ListItem", "position": 4, "name": "Blog",           "item": "https://firstsmiledentalsclinic.com/blogs" },
+        { "@type": "ListItem", "position": 5, "name": "Contact",        "item": "https://firstsmiledentalsclinic.com/contact" },
+        { "@type": "ListItem", "position": 6, "name": "Patient Corner", "item": "https://firstsmiledentalsclinic.com/patient-corner" }
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
